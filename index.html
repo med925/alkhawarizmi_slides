@@ -1,0 +1,1969 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Al Khawarizmi — Demande d’hébergement · S2T Manouba</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect fill='%23efe8da' width='64' height='64'/%3E%3Cellipse cx='32' cy='32' rx='14' ry='20' fill='none' stroke='%238c4e24' stroke-width='2'/%3E%3Cpath d='M10 46 L54 18' stroke='%238c4e24' stroke-width='2'/%3E%3C/svg%3E">
+<style>
+@font-face {
+  font-family: "Fraunces";
+  src: url("fonts/fraunces-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("fonts/fraunces-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("fonts/fraunces-500i.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("fonts/outfit-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("fonts/outfit-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Noto Sans Arabic";
+  src: url("fonts/noto-sans-arabic-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans Arabic";
+  src: url("fonts/noto-sans-arabic-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Naskh Arabic";
+  src: url("fonts/noto-naskh-arabic-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Naskh Arabic";
+  src: url("fonts/noto-naskh-arabic-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --paper: #efe8da;
+  --paper-2: #e6dece;
+  --ink: #17211c;
+  --body: #24312b;
+  --muted: #4e5b54;
+  --line: rgba(23, 33, 28, 0.14);
+  --brass: #8c4e24;
+  --brass-soft: rgba(140, 78, 36, 0.12);
+  --good: #1d5c3a;
+  --shadow: 0 1px 0 rgba(255, 252, 246, 0.7) inset;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Outfit", "Segoe UI", sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  overflow: hidden;
+  text-rendering: optimizeLegibility;
+}
+button, input { font: inherit; color: inherit; }
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.progress {
+  position: fixed;
+  left: 0; right: 0; top: 0;
+  height: 3px;
+  background: rgba(23, 33, 28, 0.08);
+  z-index: 6;
+}
+.progress span {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: var(--brass);
+  transform-origin: left center;
+  transform: scaleX(0.09);
+}
+
+.chrome {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) auto minmax(160px, 1fr);
+  align-items: center;
+  gap: 1rem;
+  height: 3.6rem;
+  padding: 0 2.2vw;
+  background: var(--paper);
+  border-top: 1px solid var(--line);
+}
+.wordmark {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.ticks {
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+  justify-content: center;
+}
+.ticks button {
+  width: 1.35rem;
+  height: 1.35rem;
+  position: relative;
+}
+.ticks button::before {
+  content: "";
+  position: absolute;
+  left: 0.28rem; right: 0.28rem;
+  top: 50%;
+  height: 2px;
+  background: rgba(23, 33, 28, 0.28);
+  transform: translateY(-50%);
+}
+.ticks button[aria-current="true"]::before {
+  left: 0.1rem; right: 0.1rem;
+  height: 3px;
+  background: var(--brass);
+}
+.chrome-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.1rem;
+}
+.langs {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+.langs button {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  padding: 0.32rem 0.42rem;
+  color: var(--muted);
+  border: 1px solid transparent;
+}
+.langs button[data-lang="ar"] {
+  font-family: "Noto Sans Arabic", "Outfit", sans-serif;
+  letter-spacing: 0;
+  font-size: 0.82rem;
+}
+.langs button[aria-pressed="true"] {
+  color: var(--brass);
+  border-color: rgba(140, 78, 36, 0.5);
+}
+.count {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+.fs {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brass);
+  border-bottom: 1px solid rgba(140, 78, 36, 0.4);
+  padding-bottom: 0.05rem;
+}
+.hint {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: 6;
+  margin: 0;
+  height: 3.6rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0.8rem;
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+.hint.is-gone { display: none; }
+body:has(.hint:not(.is-gone)) .ticks { visibility: hidden; }
+.sr {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.deck { height: 100%; position: relative; }
+.slide {
+  position: absolute;
+  inset: 0;
+  padding: 6.5vh max(4.5vw, calc((100vw - 1080px) / 2)) 5.2rem;
+  display: grid;
+  align-content: center;
+  gap: 1.35rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.slide.is-on {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: 1;
+}
+.slide::before {
+  content: "";
+  position: absolute;
+  left: max(1.5vw, calc((100vw - 1080px) / 2 - 1.4rem));
+  top: 8vh;
+  bottom: 5.6rem;
+  width: 1px;
+  background: rgba(140, 78, 36, 0.45);
+}
+
+.kicker {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+h1, h2, h3, p { margin: 0; }
+h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 500; letter-spacing: -0.03em; }
+h1 {
+  font-size: clamp(3.4rem, 6.6vw, 6.4rem);
+  line-height: 0.92;
+  max-width: 16ch;
+}
+h2 {
+  font-size: clamp(2.05rem, 3.7vw, 3.45rem);
+  line-height: 1.04;
+  max-width: 18ch;
+}
+.slide-geo h2 { max-width: 18em; }
+.lede, .quiet, li, td, th { color: var(--body); }
+.lede {
+  font-size: clamp(1.2rem, 1.7vw, 1.55rem);
+  line-height: 1.4;
+  max-width: 36ch;
+}
+.quiet {
+  color: var(--muted);
+  font-size: 0.98rem;
+  max-width: 62ch;
+}
+em {
+  font-family: "Fraunces", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.slide-open {
+  align-content: stretch;
+  grid-template-rows: auto 1fr auto;
+}
+.open-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 2rem;
+}
+.open-top span {
+  color: var(--muted);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+.open-mid { align-self: center; display: grid; gap: 1.25rem; position: relative; }
+.open-mid .project {
+  font-family: "Fraunces", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.35rem, 2.2vw, 2rem);
+  line-height: 1.25;
+  max-width: 22ch;
+  color: var(--ink);
+}
+.mark {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-54%);
+  width: min(28vh, 240px);
+  height: auto;
+  color: var(--brass);
+  opacity: 0.9;
+}
+.open-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: end;
+  border-top: 1px solid var(--line);
+  padding-top: 1.3rem;
+}
+.who small, .where small {
+  display: block;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: var(--brass);
+  margin-bottom: 0.35rem;
+}
+.who strong, .where strong {
+  display: block;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+.who span, .where span {
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+.where { text-align: right; }
+
+.slide-statement h2 { max-width: 14ch; font-size: clamp(2.7rem, 5.4vw, 5rem); }
+.slide-assist h2 { max-width: 12em; font-size: clamp(2.4rem, 4.2vw, 3.8rem); line-height: 1.05; }
+.alarm {
+  margin: 0.15rem 0 0;
+  max-width: 22em;
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(1.85rem, 3vw, 2.45rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: #c1121a;
+}
+.with-fig {
+  grid-template-columns: minmax(0, 1.15fr) minmax(210px, 0.78fr);
+  column-gap: clamp(1.2rem, 3vw, 3rem);
+  align-items: center;
+}
+.with-fig > :not(.fig-wrap) { grid-column: 1; }
+.with-fig > .fig-wrap {
+  grid-column: 2;
+  grid-row: 1 / span 8;
+  align-self: center;
+  margin: 0;
+  color: var(--ink);
+}
+.fig-wrap svg, .fig-wrap img { width: 100%; height: auto; max-height: 48vh; display: block; object-fit: contain; }
+.fig-wrap figcaption {
+  margin-top: 0.65rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.35;
+  max-width: 36ch;
+}
+.bone text, .scene text, .place text, .chart text {
+  font-family: "Outfit", "Segoe UI", sans-serif;
+}
+.chart text { fill: var(--muted); }
+.slide-money .sheet { width: 100%; }
+.chart-strip svg { max-height: 108px; }
+.slide-gain { align-content: start; padding-top: 5.5vh; gap: 0.85rem; }
+.slide-gain h2 { font-size: clamp(1.9rem, 3.2vw, 3rem); }
+.fifth { display: flex; gap: 0.35rem; align-items: center; margin-bottom: 0.3rem; }
+.fifth i {
+  display: block;
+  width: 0.45rem;
+  height: 1.15rem;
+  border-radius: 2px;
+  background: var(--brass);
+}
+.fifth i.off { background: transparent; border: 1.5px solid var(--ink); transform: rotate(18deg); }
+.ico {
+  width: 1.25rem;
+  height: 1.25rem;
+  stroke: var(--brass);
+  fill: none;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: none;
+}
+.reasons h3, .uses strong, .brings strong {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.brings { }
+.brings li { grid-template-columns: 11rem 1fr; }
+.chain { width: 100%; }
+.chain .ico { width: 1.15rem; height: 1.15rem; }
+.money-row, .gain-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(200px, 250px);
+  gap: 1.2rem 1.6rem;
+  align-items: end;
+}
+.gain-top { grid-template-columns: minmax(0, 1fr); }
+.chart { margin: 0; }
+.chart svg { width: 100%; height: auto; display: block; }
+.chart .neg { fill: rgba(23, 33, 28, 0.22); }
+.chart .pos { fill: #1d5c3a; }
+.chart .pos-soft { fill: rgba(29, 92, 58, 0.55); }
+.chart .zero { stroke: rgba(23, 33, 28, 0.35); }
+.chart figcaption { color: var(--muted); font-size: 0.82rem; margin-top: 0.35rem; }
+.statement-copy { display: grid; gap: 0.9rem; max-width: 46ch; }
+.statement-copy p { font-size: clamp(1.15rem, 1.55vw, 1.4rem); line-height: 1.45; }
+
+.facts {
+  list-style: none;
+  margin: 0.4rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+  max-width: 78ch;
+}
+.facts li {
+  display: grid;
+  grid-template-columns: 4.2rem 1fr;
+  gap: 1.2rem;
+  align-items: baseline;
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+  font-size: clamp(1.12rem, 1.55vw, 1.42rem);
+  line-height: 1.35;
+}
+.facts li:last-child { border-bottom: 1px solid var(--line); }
+.facts .n {
+  font-family: "Fraunces", Georgia, serif;
+  color: var(--brass);
+  font-size: 1.35rem;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.9fr) minmax(280px, 1.1fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+}
+.chain { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.15rem; }
+.chain li {
+  display: grid;
+  grid-template-columns: 1.4rem 1.3rem minmax(0, 1fr);
+  gap: 0.7rem;
+  align-items: center;
+  padding: 0.62rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: clamp(1.02rem, 1.3vw, 1.22rem);
+}
+.chain li:first-child { border-top: 1px solid var(--line); }
+.chain .n {
+  font-family: "Fraunces", Georgia, serif;
+  color: var(--brass);
+}
+
+.reasons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.2rem, 2.5vw, 2.6rem);
+  margin-top: 0.4rem;
+}
+.reasons article {
+  border-top: 1px solid var(--brass);
+  padding-top: 0.9rem;
+  display: grid;
+  gap: 0.55rem;
+  align-content: start;
+}
+.reasons .n {
+  font-family: "Fraunces", Georgia, serif;
+  color: var(--brass);
+  font-size: 1.2rem;
+}
+.reasons h3 { font-size: clamp(1.35rem, 1.8vw, 1.7rem); line-height: 1.15; }
+.reasons p { color: var(--body); font-size: 1.02rem; line-height: 1.4; }
+.geo-fig {
+  width: 7.2rem;
+  height: 4.4rem;
+  display: block;
+  margin: 0.15rem 0 0.35rem;
+  stroke: var(--ink);
+  fill: none;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.geo-fig .brass { stroke: var(--brass); }
+
+.uses {
+  list-style: none;
+  margin: 0.2rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 3vw;
+}
+.uses li {
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 0.25rem;
+}
+.uses li:nth-last-child(-n+2) { border-bottom: 1px solid var(--line); }
+.uses strong {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 500;
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+}
+.uses span { color: var(--body); font-size: 1.02rem; max-width: 36ch; }
+.aside {
+  margin-top: 0.3rem;
+  max-width: 62ch;
+  font-size: 1.08rem;
+}
+.marks {
+  list-style: none;
+  margin: 0.2rem 0 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: clamp(1.6rem, 3vw, 3rem);
+}
+.marks img {
+  display: block;
+  height: 4.6rem;
+  width: auto;
+  object-fit: contain;
+}
+.marks .wide { height: 3.35rem; }
+
+.pipe { display: grid; gap: 0.45rem; }
+.pipe-label {
+  margin: 0.15rem 0 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+.pipe-row {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.2rem;
+}
+.pipe-row > li {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  border: 1px solid var(--line);
+  background: rgba(255, 252, 246, 0.55);
+  padding: 0.7rem 0.65rem 0.75rem;
+  display: grid;
+  gap: 0.2rem;
+  align-content: start;
+}
+.pipe-row > li::after {
+  content: "";
+  position: absolute;
+  right: -0.85rem;
+  top: 50%;
+  width: 0.5rem;
+  border-top: 1.5px solid var(--brass);
+}
+.pipe-row > li::before {
+  content: "";
+  position: absolute;
+  right: -0.95rem;
+  top: calc(50% - 3.5px);
+  border: 4px solid transparent;
+  border-left: 5px solid var(--brass);
+}
+.pipe-row > li:last-child::before,
+.pipe-row > li:last-child::after { content: none; }
+.pipe-row strong {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 500;
+  font-size: 1.12rem;
+  letter-spacing: -0.02em;
+}
+.pipe-row span { font-size: 0.9rem; line-height: 1.3; color: var(--body); }
+.pipe-row.done > li { border-top: 2px solid var(--good); }
+.pipe-row.next > li { border-top: 2px solid var(--brass); background: transparent; }
+.pipe-fig {
+  width: 100%;
+  height: 3.1rem;
+  display: block;
+  margin-bottom: 0.15rem;
+}
+.pipe-steps {
+  list-style: none;
+  margin: 0.15rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.28rem;
+}
+.pipe-row .pipe-steps li {
+  flex: none;
+  min-width: 0;
+  position: static;
+  border: 0;
+  border-left: 1px solid var(--brass);
+  background: none;
+  padding: 0 0 0 0.55rem;
+  display: block;
+  font-size: 0.84rem;
+  line-height: 1.28;
+}
+.years ul {
+  list-style: none;
+  margin: 0.15rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+.years li {
+  font-size: 0.98rem;
+  line-height: 1.35;
+  padding-left: 0.7rem;
+  border-left: 1px solid var(--brass);
+}
+
+.years {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1rem, 2vw, 2rem);
+}
+.years article {
+  background: rgba(255, 252, 246, 0.45);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+  padding: 1.15rem 1.2rem 1.25rem;
+  display: grid;
+  gap: 0.45rem;
+  align-content: start;
+  min-height: 0;
+}
+.years .y {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.years h3 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--brass);
+}
+.years p { font-size: 1.02rem; line-height: 1.4; }
+
+.offer { display: grid; gap: 1rem; }
+.offer-main {
+  display: grid;
+  grid-template-columns: minmax(160px, 240px) minmax(0, 1fr);
+  gap: 1rem 1.4rem;
+  align-items: center;
+  border-top: 2px solid var(--brass);
+  padding-top: 0.9rem;
+}
+.offer-hero, .offer-card {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.offer-card { height: 3.6rem; }
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1rem, 2vw, 1.8rem);
+}
+.offer-grid article {
+  border-top: 1px solid var(--line);
+  padding-top: 0.75rem;
+  display: grid;
+  gap: 0.35rem;
+  align-content: start;
+}
+.offer .when {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(1.8rem, 2.6vw, 2.4rem);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--brass);
+}
+.offer h3 { font-size: clamp(1.25rem, 1.6vw, 1.5rem); line-height: 1.15; }
+.offer p { color: var(--body); font-size: 1.02rem; line-height: 1.4; }
+.offer-main p { max-width: 62ch; }
+.bloc {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.bloc li {
+  display: grid;
+  grid-template-columns: 4.6rem minmax(9.5rem, 13rem) minmax(0, 1fr);
+  gap: 0.8rem 1.1rem;
+  align-items: center;
+  padding: 0.72rem 0;
+  border-top: 1px solid var(--line);
+}
+.bloc li:last-child { border-bottom: 1px solid var(--line); }
+.bloc-fig { width: 4.4rem; height: 2.5rem; display: block; }
+.bloc strong {
+  display: block;
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 500;
+  font-size: 1.28rem;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+.bloc .when {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.2rem;
+  color: var(--brass);
+  letter-spacing: -0.02em;
+}
+.bloc .role {
+  display: block;
+  margin-top: 0.18rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+.bloc p { font-size: 1.02rem; line-height: 1.35; }
+
+.sheet {
+  width: min(100%, 920px);
+  border-collapse: collapse;
+}
+.sheet th, .sheet td {
+  padding: 0.72rem 0;
+  border-bottom: 1px solid var(--line);
+  text-align: right;
+}
+.sheet thead th {
+  font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brass);
+  padding-bottom: 0.45rem;
+}
+.sheet tbody th {
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+.sheet td {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(1.7rem, 2.8vw, 2.55rem);
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+  padding-left: 1.5rem;
+}
+.sheet .up { color: var(--good); }
+.sheet.horizon { width: min(100%, 1180px); }
+.sheet.horizon td {
+  font-size: clamp(1.15rem, 1.85vw, 1.8rem);
+  padding-left: 0.65rem;
+}
+.sheet.horizon .beyond { background: rgba(29, 92, 58, 0.07); }
+.sheet.horizon thead .beyond { color: var(--good); }
+.sheet.horizon thead th span {
+  display: block;
+  margin-top: 0.18rem;
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+}
+.slide-gain h2 { max-width: 14ch; }
+.slide-jobs { align-content: start; padding-top: 5.5vh; gap: 0.85rem; }
+.slide-jobs h2 { max-width: 16ch; font-size: clamp(1.9rem, 3.2vw, 3rem); }
+.unit { color: var(--muted); font-size: 0.95rem; }
+
+.brings {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+}
+.brings li {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  gap: 1rem;
+  padding: 0.78rem 0;
+  border-top: 1px solid var(--line);
+  font-size: clamp(1.05rem, 1.35vw, 1.25rem);
+  align-items: baseline;
+}
+.brings li:last-child { border-bottom: 1px solid var(--line); }
+.brings strong {
+  font-weight: 500;
+  color: var(--brass);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.asks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+  max-width: 78ch;
+}
+.asks li {
+  display: grid;
+  grid-template-columns: 2.4rem 1fr;
+  gap: 0.9rem;
+  padding: 0.72rem 0;
+  border-top: 1px solid var(--line);
+  font-size: clamp(1.08rem, 1.45vw, 1.32rem);
+  line-height: 1.35;
+}
+.asks li:last-of-type { border-bottom: 1px solid var(--line); }
+.asks .n {
+  font-family: "Fraunces", Georgia, serif;
+  color: var(--brass);
+}
+.roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.6rem;
+  margin-top: 0.3rem;
+}
+.roles p { font-size: 1rem; max-width: 24ch; }
+.roles strong {
+  display: block;
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+  margin-bottom: 0.1rem;
+}
+
+.slide-close { align-content: stretch; grid-template-rows: 1fr auto; }
+.close-mid {
+  align-self: center;
+  display: grid;
+  gap: 1.3rem;
+  max-width: 16em;
+}
+.slide-close h2 {
+  font-size: clamp(2.8rem, 4.8vw, 4.6rem);
+  max-width: 14em;
+  line-height: 1.02;
+}
+.slide-close .close-mid { max-width: 14em; }
+.slide-open .portrait,
+.slide-close .portrait {
+  object-fit: cover;
+  object-position: center 16%;
+  border-radius: 50%;
+  background: var(--paper);
+  box-shadow: 0 0 0 1px rgba(140, 78, 36, 0.55);
+}
+.slide-open .lede { max-width: 28ch; }
+.slide-open .portrait {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-54%);
+  width: min(36vh, 300px);
+  aspect-ratio: 1;
+}
+.slide-close .portrait {
+  position: absolute;
+  right: 7vw;
+  top: 44%;
+  width: min(30vh, 230px);
+  aspect-ratio: 1;
+}
+.close-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: end;
+  border-top: 1px solid var(--line);
+  padding-top: 1.2rem;
+}
+.close-bottom .mark {
+  position: static;
+  transform: none;
+  width: 72px;
+  opacity: 0.85;
+}
+.thanks {
+  font-family: "Fraunces", Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+}
+
+body.lang-ar {
+  font-family: "Noto Sans Arabic", "Outfit", sans-serif;
+  line-height: 1.65;
+}
+body.lang-ar h2,
+body.lang-ar h3,
+body.lang-ar .alarm,
+body.lang-ar em,
+body.lang-ar .thanks,
+body.lang-ar .bloc strong,
+body.lang-ar .bloc .when,
+body.lang-ar .roles strong,
+body.lang-ar .asks .n,
+body.lang-ar .y,
+body.lang-ar .pipe-row strong {
+  font-family: "Noto Naskh Arabic", "Fraunces", serif;
+  letter-spacing: 0;
+}
+body.lang-ar h2 { max-width: 20em; line-height: 1.28; }
+body.lang-ar .slide-statement h2 { max-width: 14em; font-size: clamp(2.15rem, 4vw, 3.4rem); }
+body.lang-ar .slide-assist h2 { max-width: 16em; }
+body.lang-ar .slide-gain h2,
+body.lang-ar .slide-jobs h2 { max-width: 18em; }
+body.lang-ar .alarm {
+  max-width: 18em;
+  font-size: clamp(1.45rem, 2.3vw, 1.9rem);
+  line-height: 1.4;
+}
+body.lang-ar .kicker,
+body.lang-ar .open-top span,
+body.lang-ar .who small,
+body.lang-ar .where small,
+body.lang-ar .bloc .role,
+body.lang-ar .brings strong,
+body.lang-ar .sheet thead th,
+body.lang-ar .sheet.horizon thead th span,
+body.lang-ar .fs {
+  letter-spacing: 0;
+  text-transform: none;
+}
+body.lang-ar .brings strong { font-size: 0.95rem; }
+body.lang-ar .brings li { grid-template-columns: 6.8rem 1fr; }
+body.lang-ar .pipe-label { letter-spacing: 0; text-transform: none; }
+body.lang-ar [dir="rtl"] { text-align: left; }
+body.lang-ar .where [dir="rtl"] { text-align: right; }
+body.lang-ar .scene text,
+body.lang-ar .place text {
+  font-family: "Noto Sans Arabic", "Outfit", sans-serif;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .slide { transition: opacity 0.35s ease; }
+  .progress span { transition: transform 0.35s ease; }
+}
+
+@media screen and (max-width: 860px), screen and (max-height: 640px) {
+  .mark { display: none; }
+  .reasons, .years, .split, .uses, .with-fig, .money-row, .offer-grid, .offer-main { grid-template-columns: 1fr; }
+  .with-fig > .fig-wrap { grid-column: 1; grid-row: auto; max-width: 320px; }
+  .uses li:nth-last-child(-n+2) { border-bottom: 0; }
+  .uses li:last-child { border-bottom: 1px solid var(--line); }
+  h1 { max-width: none; }
+  .open-bottom, .close-bottom, .chrome { grid-template-columns: 1fr; }
+  .where, .close-bottom { text-align: left; }
+  .slide { overflow: auto; }
+  .brings li, .bloc li { grid-template-columns: 1fr; gap: 0.15rem; }
+  .pipe-row { flex-direction: column; gap: 0.55rem; }
+  .pipe-row li::before, .pipe-row li::after { content: none; }
+}
+
+@page {
+  size: 13.333in 7.5in;
+  margin: 0;
+}
+@media print {
+  html, body {
+    height: auto;
+    overflow: visible;
+    background: var(--paper);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .progress, .chrome, .hint { display: none !important; }
+  .deck { height: auto; }
+  .slide {
+    position: relative;
+    inset: auto;
+    opacity: 1 !important;
+    visibility: visible !important;
+    width: 13.333in;
+    height: 7.5in;
+    min-height: 7.5in;
+    max-height: 7.5in;
+    overflow: hidden;
+    background: var(--paper);
+    break-after: page;
+    page-break-after: always;
+  }
+  .slide:last-of-type {
+    break-after: auto;
+    page-break-after: auto;
+  }
+}
+</style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-hospital" viewBox="0 0 24 24">
+    <path d="M4 20 V10 L12 4 L20 10 V20 Z"/>
+    <path d="M12 11 V17 M9 14 H15"/>
+  </symbol>
+  <symbol id="i-code" viewBox="0 0 24 24">
+    <path d="M9 7 L4 12 L9 17"/>
+    <path d="M15 7 L20 12 L15 17"/>
+    <path d="M13 6 L11 18"/>
+  </symbol>
+  <symbol id="i-years" viewBox="0 0 24 24">
+    <circle cx="5" cy="12" r="2"/>
+    <circle cx="12" cy="12" r="2"/>
+    <circle cx="19" cy="12" r="2"/>
+    <path d="M7 12 H10 M14 12 H17"/>
+  </symbol>
+  <symbol id="i-desks" viewBox="0 0 24 24">
+    <rect x="3" y="4" width="8" height="6"/>
+    <rect x="13" y="4" width="8" height="6"/>
+    <rect x="3" y="14" width="8" height="6"/>
+    <rect x="13" y="14" width="8" height="6"/>
+  </symbol>
+  <symbol id="i-screen" viewBox="0 0 24 24">
+    <rect x="3" y="4" width="18" height="12"/>
+    <path d="M8 20 H16 M12 16 V20"/>
+  </symbol>
+  <symbol id="i-table" viewBox="0 0 24 24">
+    <rect x="3" y="11" width="18" height="7"/>
+    <circle cx="8" cy="7" r="2"/>
+    <circle cx="16" cy="7" r="2"/>
+  </symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24">
+    <path d="M12 21 S6 14 6 10 a6 6 0 0 1 12 0 c0 4-6 11-6 11z"/>
+    <circle cx="12" cy="10" r="2"/>
+  </symbol>
+  <symbol id="i-person" viewBox="0 0 24 24">
+    <circle cx="12" cy="7" r="3"/>
+    <path d="M5 20 c1.2-5 12.8-5 14 0"/>
+  </symbol>
+  <symbol id="i-people" viewBox="0 0 24 24">
+    <circle cx="9" cy="8" r="2.4"/>
+    <circle cx="16" cy="8" r="2.4"/>
+    <path d="M3.5 19 c.8-3.6 7-3.6 8 0"/>
+    <path d="M12.5 19 c.8-3.6 7-3.6 8 0"/>
+  </symbol>
+  <symbol id="i-link" viewBox="0 0 24 24">
+    <circle cx="7" cy="12" r="3"/>
+    <circle cx="17" cy="12" r="3"/>
+    <path d="M10 12 H14"/>
+  </symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24">
+    <path d="M7 3 H15 L19 7 V21 H7 Z"/>
+    <path d="M15 3 V7 H19"/>
+    <path d="M10 12 H16 M10 16 H14"/>
+  </symbol>
+  <symbol id="i-fluoro" viewBox="0 0 24 24">
+    <rect x="2" y="4" width="8" height="16"/>
+    <rect x="14" y="4" width="8" height="16"/>
+  </symbol>
+  <symbol id="i-marks" viewBox="0 0 24 24">
+    <rect x="4" y="4" width="16" height="16"/>
+    <circle cx="9" cy="10" r="1.2" fill="currentColor" stroke="none"/>
+    <circle cx="15" cy="8" r="1.2" fill="currentColor" stroke="none"/>
+    <circle cx="14" cy="15" r="1.2" fill="currentColor" stroke="none"/>
+  </symbol>
+  <symbol id="i-cube" viewBox="0 0 24 24">
+    <path d="M12 3 L20 7.5 V16.5 L12 21 L4 16.5 V7.5 Z"/>
+    <path d="M12 3 V12.2 L20 7.5 M12 12.2 L4 7.5"/>
+  </symbol>
+  <symbol id="i-axis" viewBox="0 0 24 24">
+    <circle cx="6" cy="17" r="2.2"/>
+    <path d="M8 15.2 L18 6"/>
+    <path d="M14 6 H18 V10"/>
+  </symbol>
+  <symbol id="i-chip" viewBox="0 0 24 24">
+    <rect x="7" y="7" width="10" height="10"/>
+    <path d="M10 7 V4 M14 7 V4 M10 20 V17 M14 20 V17 M7 10 H4 M7 14 H4 M20 10 H17 M20 14 H17"/>
+  </symbol>
+  <symbol id="i-screw" viewBox="0 0 24 24">
+    <path d="M12 3 V16"/>
+    <circle cx="12" cy="18.5" r="2.2"/>
+    <path d="M9 7 H15 M10 11 H14"/>
+  </symbol>
+</svg>
+<div class="progress" aria-hidden="true"><span id="bar"></span></div>
+<div class="sr" id="live" aria-live="polite"></div>
+
+<main class="deck" id="deck">
+
+  <section class="slide slide-open is-on" aria-label="Ouverture" data-i18n-aria="s1.aria">
+    <div class="open-top">
+      <p class="kicker" data-i18n="s1.kicker">Demande d’hébergement</p>
+      <span>2027 — 2029</span>
+    </div>
+    <div class="open-mid">
+      <h1>Al Khawarizmi</h1>
+      <p class="project">Surgi Tech Solutions</p>
+      <p class="lede" data-i18n="s1.lede">Une assistance au chirurgien, pour le guidage des vis pédiculaires.</p>
+      <img class="portrait" src="dr-bouzid.png" alt="Docteur Bouzid Lanouar, chirurgien orthopédiste" data-i18n-alt="s1.alt">
+    </div>
+    <div class="open-bottom">
+      <p class="who">
+        <small data-i18n="s1.role">Promoteur</small>
+        <strong data-i18n="s1.name">Docteur Bouzid Lanouar</strong>
+        <span data-i18n="s1.who">Chirurgien orthopédiste<br>Institut Mohamed Kassab · Ksar Saïd</span>
+      </p>
+      <p class="where">
+        <small data-i18n="s1.to">À l’attention de</small>
+        <strong>S2T</strong>
+        <span data-i18n="s1.pole">Pôle technologique de la Manouba</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="slide slide-statement with-fig" aria-label="La demande" data-i18n-aria="s2.aria">
+    <p class="kicker" data-i18n="s2.kicker">Ce que nous venons chercher</p>
+    <h2 data-i18n="s2.h2">Être hébergés, ici.</h2>
+    <div class="statement-copy">
+      <p data-i18n="s2.p1">Une place au pôle, pour l’équipe qui poursuit le logiciel d’aide au guidage des vis pédiculaires. De 2027 à 2029.</p>
+      <p data-i18n="s2.p2">Les salaires, les essais et la propriété intellectuelle sont déjà dans notre plan. Au pôle, nous venons chercher le cadre de ce travail&nbsp;: un bureau, un voisinage, et une durée.</p>
+    </div>
+    <figure class="fig-wrap">
+      <svg class="place" viewBox="0 0 300 250" role="img" aria-label="Le pôle S2T, l’hôpital Kassab, l’ENSI et ACCENT" data-i18n-aria="s2.fig">
+        <rect x="78" y="16" width="144" height="72" fill="rgba(140,78,36,0.1)" stroke="#17211c" stroke-width="1.6"/>
+        <text x="150" y="46" text-anchor="middle" font-size="15" fill="#8c4e24">S2T</text>
+        <text x="150" y="68" text-anchor="middle" font-size="12" data-i18n="s2.pole">le pôle</text>
+        <path d="M150 88 V128 M150 128 H46 V156 M150 128 H150 V156 M150 128 H254 V156" fill="none" stroke="#8c4e24" stroke-width="1.4"/>
+        <rect x="8" y="156" width="84" height="78" fill="none" stroke="#8c4e24" stroke-width="1.6"/>
+        <text x="50" y="190" text-anchor="middle" font-size="13" fill="#8c4e24">Kassab</text>
+        <text x="50" y="210" text-anchor="middle" font-size="11">Ksar Saïd</text>
+        <rect x="108" y="156" width="84" height="78" fill="none" stroke="#8c4e24" stroke-width="1.6"/>
+        <text x="150" y="190" text-anchor="middle" font-size="13" fill="#8c4e24">ENSI</text>
+        <text x="150" y="210" text-anchor="middle" font-size="11">CRISTAL</text>
+        <rect x="208" y="156" width="84" height="78" fill="none" stroke="#8c4e24" stroke-width="1.6"/>
+        <text x="250" y="190" text-anchor="middle" font-size="13" fill="#8c4e24">ACCENT</text>
+        <text x="250" y="210" text-anchor="middle" font-size="11" data-i18n="s2.embedded">embarqué</text>
+      </svg>
+    </figure>
+  </section>
+
+  <section class="slide with-fig" aria-label="Le geste" data-i18n-aria="s3.aria">
+    <p class="kicker" data-i18n="s3.kicker">Le geste, vu du bloc</p>
+    <h2 data-i18n="s3.h2">Une vis, un couloir étroit.</h2>
+    <ol class="facts">
+      <li><span class="n">01</span><span data-i18n="s3.f1">Le pédicule est une cible osseuse mince, voisine de la moelle, des racines et des vaisseaux.</span></li>
+      <li><span class="n">02</span><span data-i18n="s3.f2">La littérature rapporte qu’environ 20&nbsp;% des vis sont mal positionnées. C’est un ordre de grandeur publié, notre point de départ. Notre propre mesure viendra avec les essais.</span></li>
+      <li><span class="n">03</span><span data-i18n="s3.f3">Le geste demande une lecture anatomique lourde, une fluoroscopie répétée, et un contrôle permanent de la trajectoire.</span></li>
+    </ol>
+    <p class="aside"><em data-i18n="s3.aside">Le chirurgien opère. L’assistance rend la trajectoire lisible avant que la vis n’avance.</em></p>
+    <figure class="fig-wrap">
+      <img class="bone" src="vertebre-couloir.jpg" alt="Coupe d’une vertèbre : la vis traverse le pédicule, le couloir étroit, sans entrer dans le canal" data-i18n-alt="s3.imgalt">
+      <figcaption>
+        <span class="fifth" aria-hidden="true"><i></i><i></i><i></i><i></i><i class="off"></i></span>
+        <span data-i18n="s3.cap">Coupe axiale. Environ une vis sur cinq manque le couloir.</span>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide-statement slide-assist with-fig" aria-label="Une assistance" data-i18n-aria="s4.aria">
+    <p class="kicker" data-i18n="s4.kicker">Ce que le projet est</p>
+    <h2><span data-i18n="s4.h2a">Le chirurgien opère.</span><br><span data-i18n="s4.h2b">Le système assiste.</span></h2>
+    <p class="alarm" data-i18n="s4.alarm">Le robot assiste. Il n’opère pas.</p>
+    <div class="statement-copy">
+      <p data-i18n="s4.p1">Le robot ne fait pas la chirurgie. Il aide à préparer la trajectoire et à la tenir. Le docteur décide, confirme, et pose la vis.</p>
+      <p data-i18n="s4.p2">Le projet est réalisable, et il est déjà entamé. La vertèbre est détectée, l’axe de perçage est estimé, le bras est caractérisé. En 2027, ces pièces doivent tenir ensemble. Le chirurgien reste celui qui confirme et qui pose la vis.</p>
+    </div>
+    <figure class="fig-wrap">
+      <svg class="scene" viewBox="0 0 340 308" role="img" aria-label="Le chirurgien décide et pose, le logiciel prépare, le bras tient l’alignement" data-i18n-aria="s4.fig">
+        <circle cx="46" cy="42" r="16" fill="none" stroke="#17211c" stroke-width="1.6"/>
+        <path d="M18 96 Q46 62 74 96" fill="none" stroke="#17211c" stroke-width="1.6"/>
+        <text data-x-ltr="92" data-x-rtl="330" x="92" y="46" font-size="15" fill="#17211c" data-i18n="s4.surg">Chirurgien</text>
+        <text data-x-ltr="92" data-x-rtl="330" x="92" y="68" font-size="12" data-i18n="s4.surg2">décide et pose la vis</text>
+        <path d="M46 108 V132" fill="none" stroke="#8c4e24" stroke-width="1.4"/>
+        <path d="M41 126 L46 134 L51 126" fill="none" stroke="#8c4e24" stroke-width="1.4"/>
+        <rect x="16" y="146" width="78" height="54" rx="3" fill="rgba(140,78,36,0.08)" stroke="#17211c" stroke-width="1.6"/>
+        <path d="M28 186 L58 160" fill="none" stroke="#8c4e24" stroke-width="1.6"/>
+        <circle cx="58" cy="160" r="2.4" fill="#8c4e24"/>
+        <text data-x-ltr="108" data-x-rtl="330" x="108" y="168" font-size="15" fill="#17211c" data-i18n="s4.soft">Logiciel</text>
+        <text data-x-ltr="108" data-x-rtl="330" x="108" y="190" font-size="12" data-i18n="s4.soft2">prépare la trajectoire</text>
+        <path d="M55 212 V236" fill="none" stroke="#8c4e24" stroke-width="1.4"/>
+        <path d="M50 230 L55 238 L60 230" fill="none" stroke="#8c4e24" stroke-width="1.4"/>
+        <circle cx="36" cy="268" r="5" fill="none" stroke="#17211c" stroke-width="1.6"/>
+        <circle cx="78" cy="246" r="5" fill="none" stroke="#17211c" stroke-width="1.6"/>
+        <circle cx="124" cy="272" r="5" fill="none" stroke="#17211c" stroke-width="1.6"/>
+        <path d="M41 266 L73 248 M83 250 L119 270" fill="none" stroke="#17211c" stroke-width="1.6"/>
+        <path d="M124 272 L156 252" fill="none" stroke="#8c4e24" stroke-width="1.6"/>
+        <text data-x-ltr="168" data-x-rtl="330" x="168" y="258" font-size="15" fill="#17211c" data-i18n="s4.arm">Bras</text>
+        <text data-x-ltr="168" data-x-rtl="330" x="168" y="280" font-size="12" data-i18n="s4.arm2">tient l’alignement</text>
+      </svg>
+    </figure>
+  </section>
+
+  <section class="slide" aria-label="La composition du projet" data-i18n-aria="s5.aria">
+    <p class="kicker" data-i18n="s5.kicker">Dans le bloc opératoire</p>
+    <h2 data-i18n="s5.h2">Quatre produits, et leur usage.</h2>
+    <p class="unit" data-i18n="s5.unit">Le chiffre d’affaires commence dès la première année, en 2027.</p>
+    <ol class="bloc">
+      <li>
+        <svg class="bloc-fig" viewBox="0 0 88 48" role="img" aria-label="Planification sur la fluoroscopie" data-i18n-aria="s5.planaria">
+          <rect x="4" y="4" width="22" height="40" fill="none" stroke="#17211c" stroke-width="1.4"/>
+          <path d="M15 8 C12 18 12 30 15 40" fill="none" stroke="#8c4e24" stroke-width="1.5"/>
+          <ellipse cx="58" cy="16" rx="14" ry="6" fill="none" stroke="#17211c" stroke-width="1.3"/>
+          <path d="M46 22 V36 M70 22 V36" fill="none" stroke="#17211c" stroke-width="1.3"/>
+          <line x1="80" y1="40" x2="62" y2="14" stroke="#8c4e24" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <strong data-i18n="s5.plan">Planification</strong>
+          <span class="when">2027</span>
+        </div>
+        <p data-i18n="s5.planp">Sur la fluoroscopie déjà au bloc, la vertèbre est montrée et l’axe de perçage est tracé. Le chirurgien le lit avant d’avancer la vis.</p>
+      </li>
+      <li>
+        <svg class="bloc-fig" viewBox="0 0 88 48" role="img" aria-label="Repère du patient ramené à l’image" data-i18n-aria="s5.reparia">
+          <path d="M12 38 V12 M12 38 H36" fill="none" stroke="#17211c" stroke-width="1.4"/>
+          <path d="M50 36 V12 M50 36 H78" fill="none" stroke="#8c4e24" stroke-width="1.4"/>
+          <path d="M34 22 H48" fill="none" stroke="#8c4e24" stroke-width="1.3"/>
+          <path d="M44 18 L50 22 L44 26" fill="none" stroke="#8c4e24" stroke-width="1.3"/>
+          <circle cx="22" cy="28" r="3" fill="none" stroke="#17211c" stroke-width="1.3"/>
+        </svg>
+        <div>
+          <strong data-i18n="s5.rep">Repère</strong>
+          <span class="when">2028</span>
+        </div>
+        <p data-i18n="s5.repp">Le patient sur la table est ramené aux axes de l’image. L’axe affiché est celui du corps, dans le champ de travail.</p>
+      </li>
+      <li>
+        <svg class="bloc-fig" viewBox="0 0 88 48" role="img" aria-label="Assistance complète, bras et chirurgien" data-i18n-aria="s5.assaria">
+          <circle cx="14" cy="14" r="5" fill="none" stroke="#17211c" stroke-width="1.3"/>
+          <path d="M6 34 Q14 22 22 34" fill="none" stroke="#17211c" stroke-width="1.3"/>
+          <rect x="28" y="10" width="22" height="16" fill="rgba(140,78,36,0.08)" stroke="#17211c" stroke-width="1.2"/>
+          <line x1="46" y1="22" x2="32" y2="14" stroke="#8c4e24" stroke-width="1.6" stroke-linecap="round"/>
+          <circle cx="58" cy="34" r="2.6" fill="none" stroke="#17211c" stroke-width="1.2"/>
+          <circle cx="70" cy="22" r="2.6" fill="none" stroke="#17211c" stroke-width="1.2"/>
+          <circle cx="82" cy="14" r="2.6" fill="none" stroke="#17211c" stroke-width="1.2"/>
+          <path d="M60 33 L68 23 M72 21 L80 15" fill="none" stroke="#17211c" stroke-width="1.3"/>
+        </svg>
+        <div>
+          <strong data-i18n="s5.ass">Assistance</strong>
+          <span class="role" data-i18n="s5.role">Produit principal</span>
+          <span class="when">2029</span>
+        </div>
+        <p data-i18n="s5.assp">Le bras du partenaire tient l’axe déjà calculé. Le chirurgien confirme, puis pose la vis.</p>
+      </li>
+      <li>
+        <svg class="bloc-fig" viewBox="0 0 88 48" role="img" aria-label="Formation de l’équipe du bloc" data-i18n-aria="s5.foraria">
+          <circle cx="22" cy="14" r="6" fill="none" stroke="#17211c" stroke-width="1.4"/>
+          <path d="M10 40 Q22 26 34 40" fill="none" stroke="#17211c" stroke-width="1.4"/>
+          <rect x="46" y="8" width="36" height="32" fill="none" stroke="#17211c" stroke-width="1.4"/>
+          <path d="M52 18 H76 M52 26 H72 M52 34 H64" fill="none" stroke="#8c4e24" stroke-width="1.4"/>
+        </svg>
+        <div>
+          <strong data-i18n="s5.for">Formation</strong>
+          <span class="when">2027</span>
+        </div>
+        <p data-i18n="s5.forp">L’équipe du bloc apprend à lire l’axe, puis à travailler avec le bras. Les mises à jour suivent, d’une opération à l’autre.</p>
+      </li>
+    </ol>
+    <p class="quiet" data-i18n="s5.quiet">Dès 2027, 170&nbsp;000 dinars : planification et formation. En 2028, le repère porte le total à 340&nbsp;000. En 2029, l’assistance complète ouvre les 800&nbsp;000. Les totaux du plan ne changent pas.</p>
+  </section>
+
+  <section class="slide" aria-label="L’impact social" data-i18n-aria="s6.aria">
+    <p class="kicker" data-i18n="s6.kicker">L’impact social</p>
+    <h2 data-i18n="s6.h2">Une vis qui ne blesse pas.</h2>
+    <div class="reasons">
+      <article>
+        <span class="n">01</span>
+        <h3><svg class="ico" aria-hidden="true"><use href="#i-person"/></svg><span data-i18n="s6.pat">Le patient.</span></h3>
+        <p data-i18n="s6.patp">Une vis hors du pédicule peut toucher une racine, la moelle, ou imposer une reprise. L’assistance rend la trajectoire lisible avant que la vis n’avance. Le chirurgien reste celui qui décide.</p>
+      </article>
+      <article>
+        <span class="n">02</span>
+        <h3><svg class="ico" aria-hidden="true"><use href="#i-hospital"/></svg><span data-i18n="s6.hosp">L’hôpital public.</span></h3>
+        <p data-i18n="s6.hospp">Les essais se font à l’Institut Kassab. Le projet vise une solution compacte et accessible, à la portée de cet hôpital.</p>
+      </article>
+      <article>
+        <span class="n">03</span>
+        <h3><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="s6.care">Le soin, d’abord ici.</span></h3>
+        <p data-i18n="s6.carep">Les pilotes commencent dans les hôpitaux tunisiens, puis en Afrique du Nord et en Afrique subsaharienne. La formation garde le geste chez le chirurgien du lieu.</p>
+      </article>
+    </div>
+    <p class="aside"><em data-i18n="s6.aside">La littérature dit qu’environ une vis sur cinq manque le couloir. Le chiffre de ce projet se mesurera aux essais.</em></p>
+  </section>
+
+  <section class="slide" aria-label="Le métier" data-i18n-aria="s7.aria">
+    <p class="kicker" data-i18n="s7.kicker">Ce que la société développe</p>
+    <div class="split">
+      <div>
+        <h2 data-i18n="s7.h2">Le logiciel qui guide.</h2>
+        <p class="lede" style="margin-top:1rem" data-i18n="s7.lede">Le bras vient d’un partenaire industriel. Il porte l’alignement préparé par le logiciel. L’opération reste entre les mains du chirurgien.</p>
+      </div>
+      <ol class="chain">
+        <li><svg class="ico" aria-hidden="true"><use href="#i-fluoro"/></svg><span class="n">1</span><span data-i18n="s7.c1">Deux clichés de fluoroscopie, face et profil.</span></li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-marks"/></svg><span class="n">2</span><span data-i18n="s7.c2">L’image retrouve la vertèbre et les repères.</span></li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-cube"/></svg><span class="n">3</span><span data-i18n="s7.c3">Le recalage estime la pose dans l’espace.</span></li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-axis"/></svg><span class="n">4</span><span data-i18n="s7.c4">La planification trace l’axe et le point d’entrée.</span></li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-screw"/></svg><span class="n">5</span><span data-i18n="s7.c5">Le bras s’aligne. Le chirurgien pose la vis.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="slide slide-geo" aria-label="Pourquoi la Manouba" data-i18n-aria="s8.aria">
+    <p class="kicker" data-i18n="s8.kicker">Pourquoi ce pôle</p>
+    <h2 data-i18n="s8.h2">Kassab, l’ENSI et ACCENT sont déjà à la Manouba.</h2>
+    <div class="reasons">
+      <article>
+        <span class="n">01</span>
+        <svg class="geo-fig" viewBox="0 0 88 52" role="img" aria-label="Un chirurgien et l’hôpital Kassab">
+          <circle cx="18" cy="14" r="6"/>
+          <path d="M6 40 Q18 24 30 40"/>
+          <path d="M44 40 V22 L62 12 L80 22 V40 Z"/>
+          <path class="brass" d="M62 24 V34 M57 29 H67"/>
+        </svg>
+        <h3><span data-i18n="s8.k">La carrière, à Kassab.</span></h3>
+        <p data-i18n="s8.kp">Le docteur Bouzid Lanouar y a passé une belle période de sa carrière. L’hôpital soutient les tests.</p>
+      </article>
+      <article>
+        <span class="n">02</span>
+        <svg class="geo-fig" viewBox="0 0 88 52" role="img" aria-label="Une vertèbre lue sur une image de fluoroscopie">
+          <rect x="4" y="4" width="26" height="44"/>
+          <path class="brass" d="M17 10 C13 20 13 32 17 42"/>
+          <ellipse cx="58" cy="16" rx="16" ry="7"/>
+          <path d="M46 22 V34 M70 22 V34"/>
+          <ellipse cx="58" cy="38" rx="7" ry="5"/>
+          <line class="brass" x1="78" y1="44" x2="62" y2="14"/>
+        </svg>
+        <h3><span data-i18n="s8.e">L’image, avec CRISTAL.</span></h3>
+        <p data-i18n="s8.ep">Le laboratoire CRISTAL travaille l’image avec nous.</p>
+      </article>
+      <article>
+        <span class="n">03</span>
+        <svg class="geo-fig" viewBox="0 0 88 52" role="img" aria-label="Une carte embarquée">
+          <rect x="24" y="8" width="40" height="36"/>
+          <rect class="brass" x="34" y="18" width="20" height="16"/>
+          <path d="M32 8 V3 M44 8 V3 M56 8 V3 M32 49 V44 M44 49 V44 M56 49 V44 M24 18 H16 M24 28 H16 M24 38 H16 M64 18 H72 M64 28 H72 M64 38 H72"/>
+        </svg>
+        <h3><span data-i18n="s8.a">L’embarqué, avec ACCENT.</span></h3>
+        <p data-i18n="s8.ap">Le soutien technique porte sur la partie embarquée.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="slide" aria-label="Déjà entamé" data-i18n-aria="s9.aria">
+    <p class="kicker" data-i18n="s9.kicker">Depuis plusieurs années</p>
+    <h2 data-i18n="s9.h2">Le travail a déjà commencé.</h2>
+    <ul class="brings">
+      <li><strong><svg class="ico" aria-hidden="true"><use href="#i-person"/></svg><span data-i18n="s9.team">Équipe</span></strong><span data-i18n="s9.teamp">Un ingénieur en mécatronique est engagé sur le projet depuis deux ans.</span></li>
+      <li><strong><svg class="ico" aria-hidden="true"><use href="#i-marks"/></svg><span data-i18n="s9.img">Image</span></strong><span data-i18n="s9.imgp">Le laboratoire CRISTAL porte l’imagerie.</span></li>
+      <li><strong><svg class="ico" aria-hidden="true"><use href="#i-chip"/></svg><span data-i18n="s9.emb">Embarqué</span></strong><span data-i18n="s9.embp">Son soutien porte sur la partie embarquée.</span></li>
+      <li><strong><svg class="ico" aria-hidden="true"><use href="#i-hospital"/></svg><span data-i18n="s9.trial">Essais</span></strong><span data-i18n="s9.trialp">Le soutien de l’hôpital Kassab pour les tests.</span></li>
+      <li><strong><svg class="ico" aria-hidden="true"><use href="#i-doc"/></svg>UGFS</strong><span data-i18n="s9.ugfs">Une promesse de financement d’UGFS North Africa.</span></li>
+    </ul>
+    <p class="aside"><em data-i18n="s9.aside">Le jalon image et bras est déjà là. 2027 sert à les faire tenir ensemble, ici.</em></p>
+    <ul class="marks" aria-label="ENSI, ACCENT et UGFS" data-i18n-aria="s9.marks">
+      <li><img src="logos/ensi.png" alt="ENSI, École nationale des sciences de l’informatique" data-i18n-alt="s9.ensialt"></li>
+      <li><img src="logos/accent.png" alt="ACCENT"></li>
+      <li><img class="wide" src="logos/ugfs.png" alt="UGFS North Africa"></li>
+    </ul>
+  </section>
+
+  <section class="slide" aria-label="Le pipeline" data-i18n-aria="s10.aria">
+    <p class="kicker" data-i18n="s10.kicker">Le pipeline</p>
+    <h2 data-i18n="s10.h2">De la radio jusqu’à la vis.</h2>
+    <div class="pipe">
+      <p class="pipe-label" data-i18n="s10.done">Déjà obtenu</p>
+      <ol class="pipe-row done">
+        <li>
+          <svg class="pipe-fig" viewBox="0 0 88 52" role="img" aria-label="Deux clichés de rayons X" data-i18n-aria="s10.xrayaria">
+            <rect x="4" y="4" width="34" height="44" fill="none" stroke="#17211c" stroke-width="1.4"/>
+            <rect x="50" y="4" width="34" height="44" fill="none" stroke="#17211c" stroke-width="1.4"/>
+            <path d="M21 10 C16 20 16 32 21 42" fill="none" stroke="#8c4e24" stroke-width="1.6"/>
+            <path d="M67 12 H78 M67 26 H80 M67 40 H76" fill="none" stroke="#8c4e24" stroke-width="1.4"/>
+          </svg>
+          <strong data-i18n="s10.xray">Radios</strong><span data-i18n="s10.xrayp">Les images de rayons X sont analysées.</span>
+        </li>
+        <li>
+          <svg class="pipe-fig" viewBox="0 0 88 52" role="img" aria-label="Vertèbre détectée sur l’image" data-i18n-aria="s10.vertaria">
+            <rect x="14" y="6" width="60" height="40" fill="none" stroke="#8c4e24" stroke-width="1.2" stroke-dasharray="3 2"/>
+            <ellipse cx="44" cy="18" rx="16" ry="8" fill="none" stroke="#17211c" stroke-width="1.4"/>
+            <path d="M30 24 V36 M58 24 V36" fill="none" stroke="#17211c" stroke-width="1.4"/>
+            <ellipse cx="44" cy="34" rx="7" ry="5" fill="none" stroke="#17211c" stroke-width="1.4"/>
+          </svg>
+          <strong data-i18n="s10.vert">Vertèbre</strong><span data-i18n="s10.vertp">Elle est détectée sur l’image.</span>
+        </li>
+        <li>
+          <svg class="pipe-fig" viewBox="0 0 88 52" role="img" aria-label="Axe de perçage estimé" data-i18n-aria="s10.axisaria">
+            <ellipse cx="40" cy="20" rx="16" ry="8" fill="none" stroke="#17211c" stroke-width="1.4"/>
+            <path d="M26 26 V38 M54 26 V38" fill="none" stroke="#17211c" stroke-width="1.4"/>
+            <ellipse cx="40" cy="36" rx="7" ry="5" fill="none" stroke="#17211c" stroke-width="1.4"/>
+            <line x1="70" y1="44" x2="48" y2="16" stroke="#8c4e24" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="70" cy="44" r="2.4" fill="#8c4e24"/>
+          </svg>
+          <strong data-i18n="s10.axis">Axe</strong><span data-i18n="s10.axisp">L’axe de perçage est estimé.</span>
+        </li>
+        <li>
+          <svg class="pipe-fig" viewBox="0 0 88 52" role="img" aria-label="Repère du corps ramené aux axes de l’image" data-i18n-aria="s10.reparia">
+            <path d="M14 40 V14 M14 40 H38" fill="none" stroke="#17211c" stroke-width="1.4"/>
+            <path d="M50 38 V16 M50 38 H76" fill="none" stroke="#8c4e24" stroke-width="1.4"/>
+            <path d="M36 24 H48" fill="none" stroke="#8c4e24" stroke-width="1.3"/>
+            <path d="M44 20 L50 24 L44 28" fill="none" stroke="#8c4e24" stroke-width="1.3"/>
+            <circle cx="22" cy="30" r="3" fill="none" stroke="#17211c" stroke-width="1.3"/>
+          </svg>
+          <strong data-i18n="s10.rep">Repère</strong><span data-i18n="s10.repp">Le corps est localisé, puis ramené à l’image.</span>
+        </li>
+        <li>
+          <svg class="pipe-fig" viewBox="0 0 88 52" role="img" aria-label="Bras caractérisé, trois articulations" data-i18n-aria="s10.armaria">
+            <circle cx="16" cy="40" r="3.2" fill="none" stroke="#17211c" stroke-width="1.4"/>
+            <circle cx="40" cy="24" r="3.2" fill="none" stroke="#17211c" stroke-width="1.4"/>
+            <circle cx="66" cy="16" r="3.2" fill="none" stroke="#17211c" stroke-width="1.4"/>
+            <path d="M19 38 L37 26 M43 23 L63 17" fill="none" stroke="#17211c" stroke-width="1.5"/>
+            <path d="M69 15 L82 10" fill="none" stroke="#8c4e24" stroke-width="1.6"/>
+          </svg>
+          <strong data-i18n="s10.arm">Bras</strong><span data-i18n="s10.armp">La cinématique est caractérisée.</span>
+        </li>
+      </ol>
+      <p class="pipe-label" data-i18n="s10.next">La suite</p>
+      <ol class="pipe-row next">
+        <li>
+          <strong data-i18n="s10.y27">2027 · La boucle</strong>
+          <ul class="pipe-steps">
+            <li data-i18n="s10.y27a">L’axe déjà estimé est envoyé au bras caractérisé.</li>
+            <li data-i18n="s10.y27b">Le repère image et champ de travail commande l’alignement.</li>
+            <li data-i18n="s10.y27c">On mesure si l’ensemble tient. Le réglementaire s’ouvre.</li>
+          </ul>
+        </li>
+        <li>
+          <strong data-i18n="s10.y28">2028 · Le geste</strong>
+          <ul class="pipe-steps">
+            <li data-i18n="s10.y28a">Le chirurgien valide l’axe avant que la vis n’avance.</li>
+            <li data-i18n="s10.y28b">Le bras tient l’alignement. Le chirurgien pose la vis.</li>
+            <li data-i18n="s10.y28c">Essais de précision sur le prototype, à Kassab.</li>
+          </ul>
+        </li>
+        <li>
+          <strong data-i18n="s10.y29">2029 · Les pilotes</strong>
+          <ul class="pipe-steps">
+            <li data-i18n="s10.y29a">Documentation, démonstrations, premiers contrats.</li>
+            <li data-i18n="s10.y29b">Sites pilotes dans des hôpitaux tunisiens.</li>
+            <li data-i18n="s10.y29c">Ensuite la région, par licence logicielle.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="slide" aria-label="L’usage du lieu" data-i18n-aria="s11.aria">
+    <p class="kicker" data-i18n="s11.kicker">À quoi servira le bureau</p>
+    <h2 data-i18n="s11.h2">Un atelier, pour une petite équipe.</h2>
+    <ul class="uses">
+      <li><strong><svg class="ico" aria-hidden="true"><use href="#i-desks"/></svg><span data-i18n="s11.u1">Quatre postes en 2027</span></strong><span data-i18n="s11.u1p">L’ingénieur mécatronique est déjà dans l’équipe. Le bureau ouvre sur ce noyau. La masse salariale du plan porte ensuite vers sept, puis dix.</span></li>
+      <li><strong><svg class="ico" aria-hidden="true"><use href="#i-screen"/></svg><span data-i18n="s11.u2">Le calcul et l’image</span></strong><span data-i18n="s11.u2p">Une machine pour l’apprentissage, des écrans pour annoter, un endroit où les modèles se confrontent.</span></li>
+      <li><strong><svg class="ico" aria-hidden="true"><use href="#i-table"/></svg><span data-i18n="s11.u3">La table des partenaires</span></strong><span data-i18n="s11.u3p">Une salle, quand vient un chirurgien, l’industriel du bras, ou le conseil qui prépare le dossier réglementaire.</span></li>
+      <li><strong><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="s11.u4">Une adresse</span></strong><span data-i18n="s11.u4p">Le jour où un hôpital demande où se fait le développement, la réponse sera la Manouba.</span></li>
+    </ul>
+    <p class="aside"><em data-i18n="s11.aside">Près de la moitié des charges de 2027 rémunère déjà l’équipe. C’est elle qui a besoin d’une adresse.</em></p>
+  </section>
+
+  <section class="slide" aria-label="Feuille de route" data-i18n-aria="s12.aria">
+    <p class="kicker" data-i18n="s12.kicker">La suite, en trois preuves</p>
+    <h2 data-i18n="s12.h2">Chaque année rend quelque chose de montré.</h2>
+    <div class="years">
+      <article>
+        <p class="y">2027</p>
+        <h3 data-i18n="s12.h27">La boucle</h3>
+        <ul>
+          <li data-i18n="s12.a27">Le bras caractérisé reçoit l’axe déjà estimé, dans le repère déjà construit.</li>
+          <li data-i18n="s12.b27">On mesure la précision de cet ensemble, sur des images de bloc.</li>
+          <li data-i18n="s12.c27">Le parcours réglementaire s’ouvre dans la même année.</li>
+        </ul>
+      </article>
+      <article>
+        <p class="y">2028</p>
+        <h3 data-i18n="s12.h28">Le geste confirmé</h3>
+        <ul>
+          <li data-i18n="s10.y28a">Le chirurgien valide l’axe avant que la vis n’avance.</li>
+          <li data-i18n="s10.y28b">Le bras tient l’alignement. Le chirurgien pose la vis.</li>
+          <li data-i18n="s12.c28">Essais de précision sur le prototype intégré, avec Kassab.</li>
+        </ul>
+      </article>
+      <article>
+        <p class="y">2029</p>
+        <h3 data-i18n="s12.h29">Pilotes</h3>
+        <ul>
+          <li data-i18n="s12.a29">Documentation, démonstrations et premiers contrats.</li>
+          <li data-i18n="s10.y29b">Sites pilotes dans des hôpitaux tunisiens.</li>
+          <li data-i18n="s12.c29">Ensuite la région, par licence du logiciel.</li>
+        </ul>
+      </article>
+    </div>
+    <p class="quiet" data-i18n="s12.quiet">La précision de l’axe tenu par le bras, sur des images de bloc, est le sujet de 2027 et 2028.</p>
+  </section>
+
+  <section class="slide" aria-label="Les moyens" data-i18n-aria="s13.aria">
+    <p class="kicker" data-i18n="s13.kicker">Le plan, dit tel quel</p>
+    <h2 data-i18n="s13.h2">Deux années d’apprentissage. Une année qui respire.</h2>
+    <div class="money-row">
+    <table class="sheet">
+      <thead>
+        <tr>
+          <th></th>
+          <th scope="col">2027</th>
+          <th scope="col">2028</th>
+          <th scope="col">2029</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" data-i18n="charges">Charges</th>
+          <td>250&nbsp;000</td>
+          <td>445&nbsp;000</td>
+          <td>620&nbsp;000</td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="ca">Chiffre d’affaires</th>
+          <td>170&nbsp;000</td>
+          <td>340&nbsp;000</td>
+          <td>800&nbsp;000</td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="result">Résultat</th>
+          <td>&minus;80&nbsp;000</td>
+          <td>&minus;105&nbsp;000</td>
+          <td class="up">+180&nbsp;000</td>
+        </tr>
+      </tbody>
+    </table>
+    <figure class="chart">
+      <svg viewBox="0 0 250 188" role="img" aria-label="Résultat annuel : moins 80, moins 105, puis plus 180 milliers de dinars" data-i18n-aria="s13.chart">
+        <line class="zero" x1="16" y1="108" x2="236" y2="108" stroke-width="1"/>
+        <rect class="neg" x="36" y="108" width="40" height="31"/>
+        <rect class="neg" x="106" y="108" width="40" height="41"/>
+        <rect class="pos" x="176" y="38" width="40" height="70"/>
+        <g font-size="12" text-anchor="middle">
+          <text x="56" y="156">2027</text>
+          <text x="56" y="172">−80</text>
+          <text x="126" y="164">2028</text>
+          <text x="126" y="180">−105</text>
+          <text x="196" y="30">+180</text>
+          <text x="196" y="156">2029</text>
+        </g>
+      </svg>
+      <figcaption data-i18n="s13.cap">Résultat, en milliers de dinars.</figcaption>
+    </figure>
+    </div>
+    <p class="unit" data-i18n="s13.unit">Prévisionnel, en dinars tunisiens. Les totaux sont ceux du plan.</p>
+    <p class="quiet" data-i18n="s13.quiet">Le chiffre d’affaires est là dès la première année : 170&nbsp;000 en 2027, par la planification et la formation. Aucun robot n’est vendu. En 2028, le repère s’ajoute, 340&nbsp;000. En 2029, le produit principal entre dans l’offre : le logiciel et le bras, 800&nbsp;000.</p>
+  </section>
+
+  <section class="slide slide-gain" aria-label="Le gain possible" data-i18n-aria="s14.aria">
+    <p class="kicker" data-i18n="s14.kicker">Si le cap de 2029 se prolonge</p>
+    <h2 data-i18n="s14.h2">1,25&nbsp;million de résultat cumulé.</h2>
+    <p class="quiet" data-i18n="s14.quiet">2027, 2028 et 2029 restent les chiffres du plan. Pour 2030 et 2031, le chiffre d’affaires gagne la moitié par an et les charges un quart&nbsp;: un pas plus mesuré que le bond déjà écrit entre 2028 et 2029.</p>
+    <figure class="chart chart-strip">
+      <svg viewBox="0 0 560 150" role="img" aria-label="Le résultat annuel passe de moins 105 milliers à plus 831 milliers en 2031" data-i18n-aria="s14.chart">
+        <line class="zero" x1="12" y1="112" x2="548" y2="112" stroke-width="1"/>
+        <rect class="neg" x="28" y="112" width="48" height="10"/>
+        <rect class="neg" x="132" y="112" width="48" height="13"/>
+        <rect class="pos-soft" x="236" y="90" width="48" height="22"/>
+        <rect class="pos" x="340" y="61" width="48" height="51"/>
+        <rect class="pos" x="444" y="12" width="48" height="100"/>
+        <g font-size="12" text-anchor="middle">
+          <text x="52" y="140">2027</text>
+          <text x="156" y="140">2028</text>
+          <text x="260" y="82">+180</text>
+          <text x="260" y="140">2029</text>
+          <text x="364" y="54">+425</text>
+          <text x="364" y="140">2030</text>
+          <text x="468" y="8">+831</text>
+          <text x="468" y="140">2031</text>
+        </g>
+      </svg>
+      <figcaption data-i18n="s14.cap">Résultat annuel, en milliers de dinars. Les barres pleines sont la lecture possible.</figcaption>
+    </figure>
+    <table class="sheet horizon">
+      <thead>
+        <tr>
+          <th></th>
+          <th scope="col">2027<span data-i18n="plan">plan</span></th>
+          <th scope="col">2028<span data-i18n="plan">plan</span></th>
+          <th scope="col">2029<span data-i18n="plan">plan</span></th>
+          <th class="beyond" scope="col">2030<span data-i18n="poss">possible</span></th>
+          <th class="beyond" scope="col">2031<span data-i18n="poss">possible</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" data-i18n="charges">Charges</th>
+          <td>250&nbsp;000</td>
+          <td>445&nbsp;000</td>
+          <td>620&nbsp;000</td>
+          <td class="beyond">775&nbsp;000</td>
+          <td class="beyond">969&nbsp;000</td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="ca">Chiffre d’affaires</th>
+          <td>170&nbsp;000</td>
+          <td>340&nbsp;000</td>
+          <td>800&nbsp;000</td>
+          <td class="beyond">1&nbsp;200&nbsp;000</td>
+          <td class="beyond">1&nbsp;800&nbsp;000</td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="result">Résultat</th>
+          <td>&minus;80&nbsp;000</td>
+          <td>&minus;105&nbsp;000</td>
+          <td class="up">+180&nbsp;000</td>
+          <td class="beyond up">+425&nbsp;000</td>
+          <td class="beyond up">+831&nbsp;000</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="unit" data-i18n="s14.unit">2030 et 2031 prolongent le plan, à titre de lecture. Les charges de 2031 sont arrondies au millier. Cumulé depuis 2027, le résultat atteint 1,25&nbsp;million. L’année 2031 seule vaut plus de quatre fois les +180&nbsp;000 du plan.</p>
+  </section>
+
+  <section class="slide slide-jobs" aria-label="Les emplois et le chiffre d’affaires" data-i18n-aria="s15.aria">
+    <p class="kicker" data-i18n="s15.kicker">Les emplois, avec le chiffre d’affaires</p>
+    <h2 data-i18n="s15.h2">De quatre à quinze postes.</h2>
+    <figure class="chart chart-strip">
+      <svg viewBox="0 0 560 148" role="img" aria-label="Effectif lu sur la masse salariale : 4, 7, 10, puis 12 et 15 postes" data-i18n-aria="s15.chart">
+        <line class="zero" x1="12" y1="112" x2="548" y2="112" stroke-width="1"/>
+        <rect class="pos" x="28" y="90" width="48" height="22"/>
+        <rect class="pos" x="132" y="73" width="48" height="39"/>
+        <rect class="pos" x="236" y="56" width="48" height="56"/>
+        <rect class="pos-soft" x="340" y="45" width="48" height="67"/>
+        <rect class="pos-soft" x="444" y="28" width="48" height="84"/>
+        <g font-size="13" text-anchor="middle" fill="#17211c">
+          <text x="52" y="82">4</text>
+          <text x="156" y="65">7</text>
+          <text x="260" y="48">10</text>
+          <text x="364" y="37">12</text>
+          <text x="468" y="20">15</text>
+        </g>
+        <g font-size="12" text-anchor="middle">
+          <text x="52" y="136">2027</text>
+          <text x="156" y="136">2028</text>
+          <text x="260" y="136">2029</text>
+          <text x="364" y="136">2030</text>
+          <text x="468" y="136">2031</text>
+        </g>
+      </svg>
+      <figcaption data-i18n="s15.cap">Postes. Les barres claires sont la lecture possible.</figcaption>
+    </figure>
+    <table class="sheet horizon">
+      <thead>
+        <tr>
+          <th></th>
+          <th scope="col">2027<span data-i18n="plan">plan</span></th>
+          <th scope="col">2028<span data-i18n="plan">plan</span></th>
+          <th scope="col">2029<span data-i18n="plan">plan</span></th>
+          <th class="beyond" scope="col">2030<span data-i18n="poss">possible</span></th>
+          <th class="beyond" scope="col">2031<span data-i18n="poss">possible</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" data-i18n="jobs">Emplois</th>
+          <td>4</td>
+          <td>7</td>
+          <td>10</td>
+          <td class="beyond">12</td>
+          <td class="beyond">15</td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="ca">Chiffre d’affaires</th>
+          <td>170&nbsp;000</td>
+          <td>340&nbsp;000</td>
+          <td>800&nbsp;000</td>
+          <td class="beyond">1&nbsp;200&nbsp;000</td>
+          <td class="beyond">1&nbsp;800&nbsp;000</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="unit" data-i18n="s15.unit">Le poste Personnel du plan est 120&nbsp;000, puis 200&nbsp;000, puis 290&nbsp;000. À 30&nbsp;000 dinars de coût complet par personne, arrondi à l’unité, cela fait quatre, sept et dix postes. 2030 et 2031 prolongent ce poste d’un quart par an, comme les charges. Le chiffre d’affaires en face est celui déjà montré.</p>
+  </section>
+
+  <section class="slide" aria-label="Ce que nous apportons" data-i18n-aria="s16.aria">
+    <p class="kicker" data-i18n="s16.kicker">Ce que le pôle reçoit</p>
+    <h2 data-i18n="s16.h2">Une société clinique, écrite en logiciel.</h2>
+    <ul class="brings">
+      <li><strong><svg class="ico" aria-hidden="true"><use href="#i-person"/></svg><span data-i18n="s16.f">Fondateur</span></strong><span data-i18n="s16.fp">Un chirurgien du rachis, à Kassab, à l’origine du besoin. Il connaît les vis qui manquent leur cible.</span></li>
+      <li><strong><svg class="ico" aria-hidden="true"><use href="#i-people"/></svg><span data-i18n="jobs">Emplois</span></strong><span data-i18n="s16.jp">Quatre postes en 2027, dix en 2029, une quinzaine si la lecture jusqu’en 2031 se confirme. Recrutés sur place, autour de l’image et du recalage.</span></li>
+      <li><strong><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span data-i18n="s16.l">Lien</span></strong><span data-i18n="s16.lp">Le chirurgien, le laboratoire d’image et l’embarqué travaillent déjà avec nous.</span></li>
+      <li><strong><svg class="ico" aria-hidden="true"><use href="#i-doc"/></svg><span data-i18n="s16.m">Modèle</span></strong><span data-i18n="s16.mp">Licence du logiciel, maintenance, formation. La Tunisie d’abord, comme site de preuve, puis les marchés voisins.</span></li>
+    </ul>
+    <p class="aside"><em data-i18n="s16.aside">En retour, le développement se fait sur le site, les recrutements aussi. Chaque fin d’année, nous revenons avec ce qui a été démontré.</em></p>
+  </section>
+
+  <section class="slide" aria-label="La demande précise" data-i18n-aria="s17.aria">
+    <p class="kicker" data-i18n="s17.kicker">Ce que nous soumettons au comité</p>
+    <h2 data-i18n="s17.h2">Quatre points, pour un oui utile.</h2>
+    <ol class="asks">
+      <li><span class="n">1</span><span data-i18n="s17.a1">Un espace de travail au pôle technologique de la Manouba, ouvert à quatre personnes en 2027, et capable de suivre le poste personnel du plan jusqu’en 2029.</span></li>
+      <li><span class="n">2</span><span data-i18n="s17.a2">L’usage des salles communes lorsque le projet reçoit un chirurgien, un industriel ou un conseil réglementaire.</span></li>
+      <li><span class="n">3</span><span data-i18n="s17.a3">L’accompagnement de S2T&nbsp;: mentorat, réseau du pôle, et préparation des premiers contacts au-delà de la Tunisie.</span></li>
+      <li><span class="n">4</span><span data-i18n="s17.a4">Un point de suite en 2028, au vu des preuves d’intégration, pour décider de la place des années d’après.</span></li>
+    </ol>
+    <div class="roles">
+      <p><strong>S2T</strong><span data-i18n="s17.s2t">Héberge l’équipe logicielle et l’accompagne.</span></p>
+      <p><strong>Kassab</strong><span data-i18n="s17.kas">Le chirurgien y opère. La clinique reste la sienne.</span></p>
+      <p><strong data-i18n="s17.indlabel">L’industriel</strong><span data-i18n="s17.ind">Fournit le bras d’assistance, sur notre cahier des charges.</span></p>
+    </div>
+  </section>
+
+  <section class="slide slide-close" aria-label="Clôture" data-i18n-aria="s18.aria">
+    <img class="portrait" src="dr-bouzid.png" alt="">
+    <div class="close-mid">
+      <p class="kicker" data-i18n="s18.kicker">La Manouba</p>
+      <h2 data-i18n="s18.h2">Faites&#8209;nous une place.</h2>
+      <p class="lede" data-i18n="s18.lede">Nous voudrions que le logiciel s’écrive ici, avec vous.</p>
+    </div>
+    <div class="close-bottom">
+      <p class="who">
+        <small data-i18n="s18.co">Société Al Khawarizmi Surgi Tech Solutions</small>
+        <strong data-i18n="s1.name">Docteur Bouzid Lanouar</strong>
+        <span data-i18n="s18.place">Institut Mohamed Kassab · Ksar Saïd</span>
+      </p>
+      <p class="thanks" data-i18n="s18.thanks">Merci.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="chrome">
+  <div class="wordmark">Al Khawarizmi · Surgi Tech</div>
+  <nav class="ticks" id="ticks" aria-label="Diapositives"></nav>
+  <div class="chrome-right">
+    <div class="langs" role="group" aria-label="Langue">
+      <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="ar">عربي</button>
+    </div>
+    <div class="count" id="count">01 / 18</div>
+    <button class="fs" id="fs" type="button">Plein écran</button>
+  </div>
+</footer>
+<p class="hint" id="hint">Flèches pour avancer · F pour le plein écran</p>
+
+<script src="i18n.js"></script>
+<script>
+(function () {
+  var slides = Array.prototype.slice.call(document.querySelectorAll(".slide"));
+  var bar = document.getElementById("bar");
+  var count = document.getElementById("count");
+  var live = document.getElementById("live");
+  var hint = document.getElementById("hint");
+  var ticks = document.getElementById("ticks");
+  var fsBtn = document.getElementById("fs");
+  var i = 0;
+  var lang = "fr";
+  var originals = Array.prototype.map.call(document.querySelectorAll("[data-i18n]"), function (el) {
+    var svg = el.namespaceURI === "http://www.w3.org/2000/svg";
+    return { el: el, svg: svg, html: svg ? el.textContent : el.innerHTML };
+  });
+  var ariaNodes = Array.prototype.map.call(document.querySelectorAll("[data-i18n-aria]"), function (el) {
+    return { el: el, value: el.getAttribute("aria-label") };
+  });
+  var altNodes = Array.prototype.map.call(document.querySelectorAll("[data-i18n-alt]"), function (el) {
+    return { el: el, value: el.getAttribute("alt") };
+  });
+
+  function uiPack() {
+    return (window.KH_UI && window.KH_UI[lang]) || window.KH_UI.fr;
+  }
+
+  function applyLanguage(next) {
+    if (next !== "en" && next !== "ar") next = "fr";
+    lang = next;
+    document.documentElement.lang = lang;
+    document.body.classList.toggle("lang-ar", lang === "ar");
+    document.body.classList.toggle("lang-en", lang === "en");
+    var pack = lang === "fr" || !window.KH_I18N ? null : window.KH_I18N[lang];
+    originals.forEach(function (item) {
+      var key = item.el.getAttribute("data-i18n");
+      var value = pack && pack[key] != null ? pack[key] : item.html;
+      if (item.svg) item.el.textContent = value;
+      else item.el.innerHTML = value;
+      if (!item.svg) {
+        if (lang === "ar") item.el.setAttribute("dir", "rtl");
+        else item.el.removeAttribute("dir");
+      }
+    });
+    ariaNodes.forEach(function (item) {
+      var key = item.el.getAttribute("data-i18n-aria");
+      item.el.setAttribute("aria-label", pack && pack[key] != null ? pack[key] : item.value);
+    });
+    altNodes.forEach(function (item) {
+      var key = item.el.getAttribute("data-i18n-alt");
+      item.el.setAttribute("alt", pack && pack[key] != null ? pack[key] : item.value);
+    });
+    Array.prototype.forEach.call(document.querySelectorAll(".scene text"), function (el) {
+      el.setAttribute("text-anchor", "start");
+      el.setAttribute("x", el.getAttribute("data-x-ltr"));
+    });
+    Array.prototype.forEach.call(document.querySelectorAll(".langs button"), function (b) {
+      if (b.getAttribute("data-lang") === lang) b.setAttribute("aria-pressed", "true");
+      else b.removeAttribute("aria-pressed");
+    });
+    var labels = uiPack();
+    document.title = labels.title;
+    hint.textContent = labels.hint;
+    fsBtn.textContent = document.fullscreenElement ? labels.fsOff : labels.fs;
+    ticks.setAttribute("aria-label", labels.ticks);
+    try { localStorage.setItem("khawarizmi-lang", lang); } catch (err) {}
+    if (history.replaceState) {
+      var url = new URL(location.href);
+      if (lang === "fr") url.searchParams.delete("lang");
+      else url.searchParams.set("lang", lang);
+      history.replaceState(null, "", url.pathname + url.search + url.hash);
+    }
+  }
+
+  slides.forEach(function (_, n) {
+    var b = document.createElement("button");
+    b.type = "button";
+    b.addEventListener("click", function (e) {
+      e.stopPropagation();
+      show(n);
+    });
+    ticks.appendChild(b);
+  });
+
+  function show(n) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach(function (s, idx) {
+      var on = idx === i;
+      s.classList.toggle("is-on", on);
+      s.setAttribute("aria-hidden", on ? "false" : "true");
+    });
+    var labels = uiPack();
+    Array.prototype.forEach.call(ticks.children, function (b, idx) {
+      b.setAttribute("aria-label", labels.slide + " " + (idx + 1));
+      if (idx === i) b.setAttribute("aria-current", "true");
+      else b.removeAttribute("aria-current");
+    });
+    var label = String(i + 1).padStart(2, "0") + "  /  " + String(slides.length).padStart(2, "0");
+    count.textContent = label;
+    bar.style.transform = "scaleX(" + ((i + 1) / slides.length) + ")";
+    var title = slides[i].getAttribute("aria-label") || "";
+    live.textContent = labels.slide + " " + (i + 1) + " " + labels.of + " " + slides.length + ". " + title;
+    if (history.replaceState) history.replaceState(null, "", location.pathname + location.search + "#" + (i + 1));
+  }
+
+  function next() { show(i + 1); hideHint(); }
+  function prev() { show(i - 1); hideHint(); }
+  function hideHint() { hint.classList.add("is-gone"); }
+
+  document.addEventListener("keydown", function (e) {
+    if (e.target && e.target.closest && e.target.closest("button") && (e.key === " " || e.key === "Enter")) return;
+    var map = {
+      ArrowRight: next, ArrowDown: next, PageDown: next,
+      ArrowLeft: prev, ArrowUp: prev, PageUp: prev,
+      " ": next, Enter: next
+    };
+    if (e.key === "Home") { e.preventDefault(); show(0); hideHint(); return; }
+    if (e.key === "End") { e.preventDefault(); show(slides.length - 1); hideHint(); return; }
+    if (e.key === "f" || e.key === "F") {
+      e.preventDefault();
+      toggleFs();
+      return;
+    }
+    if (map[e.key]) { e.preventDefault(); map[e.key](); }
+  });
+
+  document.getElementById("deck").addEventListener("click", function (e) {
+    if (e.target.closest("a, button")) return;
+    var x = e.clientX / window.innerWidth;
+    if (x < 0.18) prev();
+    else next();
+  });
+
+  var startX = null;
+  document.addEventListener("touchstart", function (e) {
+    startX = e.touches[0].clientX;
+  }, { passive: true });
+  document.addEventListener("touchend", function (e) {
+    if (startX == null) return;
+    var dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 48) {
+      if (dx < 0) next(); else prev();
+    }
+    startX = null;
+  }, { passive: true });
+
+  function toggleFs() {
+    if (!document.fullscreenElement) {
+      (document.documentElement.requestFullscreen || function () {}).call(document.documentElement);
+    } else if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+  fsBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    toggleFs();
+  });
+  document.addEventListener("fullscreenchange", function () {
+    var labels = uiPack();
+    fsBtn.textContent = document.fullscreenElement ? labels.fsOff : labels.fs;
+  });
+
+  Array.prototype.forEach.call(document.querySelectorAll(".langs button"), function (b) {
+    b.addEventListener("click", function (e) {
+      e.stopPropagation();
+      applyLanguage(b.getAttribute("data-lang"));
+      show(i);
+    });
+  });
+
+  var saved = "fr";
+  try {
+    saved = new URLSearchParams(location.search).get("lang") || localStorage.getItem("khawarizmi-lang") || "fr";
+  } catch (err) {}
+  applyLanguage(saved);
+  var fromHash = parseInt((location.hash || "").replace("#", ""), 10);
+  show(isFinite(fromHash) && fromHash > 0 ? fromHash - 1 : 0);
+})();
+</script>
+</body>
+</html>
